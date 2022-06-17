@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./error-page.component.sass']
 })
 export class ErrorPageComponent implements OnInit {
+  logo: string = './assets/404.png'
 
   constructor() { }
 
