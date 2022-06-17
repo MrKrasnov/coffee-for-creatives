@@ -6,5 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.sass']
 })
 export class AppComponent {
-  title = 'coffe-for-creatives';
+  logo: string = './assets/logo.png';
+  routesNav: string[] = ['home', 'work', 'about', 'blog', 'services', 'contact']
 }
+

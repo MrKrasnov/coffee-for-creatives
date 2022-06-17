@@ -1,0 +1,41 @@
+$header-color: #242b2e
+$font-color: #fff
+$active-color: #21acaa
+$hover-color: #145857
+.container
+    display: flex
+header
+    background-color: $header-color
+    min-width: 300px
+    max-width: 300px
+.logo
+    background-color: $font-color
+    img
+        margin: 12% 30%
+a
+    font-family: 'Ubuntu', sans-serif
+    text-decoration: none
+nav
+    text-align: right
+    a
+        color: $font-color
+        text-transform: uppercase
+        display: block
+        padding-right: 5%
+        padding-top: 5%
+        padding-bottom: 5%
+        .active
+            background-color: $active-color
+    a:hover
+        background: $hover-color
+.rights
+    padding-right: 5%
+    padding-top: 1%
+    padding-bottom: 1%
+    text-align: right
+    small
+        font-family: 'Ubuntu', sans-serif
+        color: $hover-color
+        font-size: 9px
+        a
+            color: $hover-color
