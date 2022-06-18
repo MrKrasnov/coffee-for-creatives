@@ -10,11 +10,11 @@ export class BackendBlogService implements InMemoryDbService {
 
     createDb() {
         let blogList = [
-            { id: 1, name: "George", massage: "Greeting, I is better in today" },
-            { id: 2, name: "George", massage: "Greeting, I is better in today" },
-            { id: 3, name: "George", massage: "Greeting, I is better in today" },
-            { id: 4, name: "George", massage: "Greeting, I is better in today" },
-            { id: 5, name: "George", massage: "Greeting, I is better in today" },
+            { id: 1, name: "George", message: "Greeting, I is better in today" },
+            { id: 2, name: "George", message: "Greeting, I is better in today" },
+            { id: 3, name: "George", message: "Greeting, I is better in today" },
+            { id: 4, name: "George", message: "Greeting, I is better in today" },
+            { id: 5, name: "George", message: "Greeting, I is better in today" },
         ];
         return { blogList }
     }
