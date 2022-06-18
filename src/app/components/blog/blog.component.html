@@ -1,6 +1,6 @@
 <div class="wrapper">
-    <div class="message">
-        <h4>Author: name</h4>
-        <p>Message</p>
+    <div class="message" *ngFor="let blog of bloglist; let pair = odd;" [class.rightSide]="pair ? true : false">
+        <h4>Author: {{blog.name}}</h4>
+        <p>{{blog.message}}</p>
     </div>
 </div>

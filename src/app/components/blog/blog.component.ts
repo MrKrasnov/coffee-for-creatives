@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FrontendBlogService } from 'src/app/server/blog/frontend-blog.service';
 
 @Component({
   selector: 'app-blog',
@@ -6,10 +7,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./blog.component.sass']
 })
 export class BlogComponent implements OnInit {
-
-  constructor() { }
+  bloglist: any;
+  constructor(private blogs: FrontendBlogService) { }
 
   ngOnInit(): void {
+    this.blogs.getItems().subscribe(data => {
+      this.bloglist = data;
+    });
   }
 
 }

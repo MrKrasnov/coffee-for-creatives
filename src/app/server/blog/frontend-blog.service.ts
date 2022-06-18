@@ -6,5 +6,7 @@ import { HttpClient } from '@angular/common/http';
 })
 export class FrontendBlogService {
     constructor(private http: HttpClient) { }
-
+    getItems() {
+        return this.http.get('api/blogList');
+    }
 }
