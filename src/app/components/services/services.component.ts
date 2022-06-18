@@ -7,14 +7,17 @@ import { interval } from 'rxjs';
   styleUrls: ['./services.component.sass']
 })
 export class ServicesComponent implements OnInit, OnDestroy {
-  cvlogo: string = './assets/serviceLogo/cvLogo.png';
-  gitlogo: string = './assets/serviceLogo/githubLogo.png';
-  linkedInlogo: string = './assets/serviceLogo/linkedinLogo.png';
+  public cvlogo: string = './assets/serviceLogo/cvLogo.png';
+  public gitlogo: string = './assets/serviceLogo/githubLogo.png';
+  public linkedInlogo: string = './assets/serviceLogo/linkedinLogo.png';
+  public linkGit: string = 'https://github.com/MrKrasnov';
+  public linkLinkedin: string = 'https://www.linkedin.com/in/yuri-krasnov-9468b019b/';
+  public linkCV: string = 'http://mrkrasnov.zzz.com.ua/';
 
-  gitClass: string = 'left';
-  cvClass: string = 'center';
-  inClass: string = 'right';
-  autoSlider: any;
+  public gitClass: string = 'left';
+  public cvClass: string = 'center';
+  public inClass: string = 'right';
+  private autoSlider: any;
 
   constructor() { }
 
