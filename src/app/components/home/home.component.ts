@@ -6,10 +6,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home.component.sass']
 })
 export class HomeComponent implements OnInit {
-
+  storageImg: string[] = [];
   constructor() { }
 
   ngOnInit(): void {
+    for (let i: number = 1; i <= 16; i++) {
+      let img: string = `./assets/main_works/${i}.jpg`;
+      this.storageImg.push(img);
+    }
   }
 
 }
