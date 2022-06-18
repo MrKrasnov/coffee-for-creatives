@@ -1,1 +1,6 @@
-<p>work works!</p>
+<div class="wrapper">
+    <h4>Write Blog!</h4>
+    <input #nameinput type="text" placeholder="name">
+    <input #message type="text" placeholder="message">
+    <button (click)="addBlog(nameinput.value, message.value)">Send</button>
+</div>

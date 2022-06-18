@@ -9,4 +9,7 @@ export class FrontendBlogService {
     getItems() {
         return this.http.get('api/blogList');
     }
+    addItem(newpost: object) {
+        return this.http.post('api/blogList', newpost);
+    }
 }
