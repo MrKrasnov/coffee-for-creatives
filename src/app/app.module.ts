@@ -11,6 +11,9 @@ import { ServicesComponent } from './components/services/services.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { ErrorPageComponent } from './components/error-page/error-page.component';
 
+import { InMemoryWebApiModule } from 'angular-in-memory-web-api';
+import { BackendBlogService } from './server/blog/backend-blog.service';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -24,7 +27,8 @@ import { ErrorPageComponent } from './components/error-page/error-page.component
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    InMemoryWebApiModule.forRoot(BackendBlogService, { delay: 700 })
   ],
   providers: [],
   bootstrap: [AppComponent]
